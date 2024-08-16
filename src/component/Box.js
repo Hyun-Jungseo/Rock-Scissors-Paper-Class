@@ -24,14 +24,7 @@ export default class BoxClass extends Component {
     return (
       <div className={`box ${this.result}`}>
         <h1>{this.props.title}</h1>
-        <h2 data-testid="item-name">
-          {this.props.item && this.props.item.name}
-        </h2>
-        <img
-          className="item-img"
-          src={this.props.item && this.props.item.img}
-          alt="RockScissorPaper"
-        />
+        <img className='item-img' src={this.props.item && this.props.item.img}/>
         <h2>{this.result}</h2>
       </div>
     );

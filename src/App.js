@@ -31,10 +31,10 @@ export default class AppClass extends Component {
       computerSelect: null,
       result: "",
     };
-  }
+  };
 
   play = (userChoice) => {
-    let computerChoice = this.randomChoice();
+    const computerChoice = this.randomChoice();
     this.setState({
       userSelect: choice[userChoice],
       computerSelect: computerChoice,
